@@ -229,4 +229,10 @@ startBtn.addEventListener('click', () => {
     drop();
 });
 
+// Controles Mobile
+document.getElementById('left').addEventListener('click', () => { if(gameRunning) p.moveLeft(); });
+document.getElementById('right').addEventListener('click', () => { if(gameRunning) p.moveRight(); });
+document.getElementById('rotate').addEventListener('click', () => { if(gameRunning) p.rotate(); });
+document.getElementById('down').addEventListener('click', () => { if(gameRunning) p.moveDown(); });
+
 drawBoard();
